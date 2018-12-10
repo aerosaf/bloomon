@@ -17,4 +17,9 @@ Class FlowerStoreCommand extends Command {
         // Output options
         $output->writeln("Hello");
     }
+
+    public function unitTesting($input)
+    {
+        return $input . 'Test';
+    }
 }

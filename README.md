@@ -81,4 +81,10 @@ The objective is to produce a ***reasonable*** amount of bouquets (good coding 
 
 Are you done? Great!! Please let challenge@bloomon.nl know that you are ready, and we will help you with next steps. Thank you for participating in our code challenge!
 
-# bloomon
+
+=================================================
+
+# Use app
+
+* Run Application: ./bloom [command]
+* PHP Unit CLI: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/FlowerStoreCommandTest
