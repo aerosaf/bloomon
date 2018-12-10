@@ -1,0 +1,14 @@
+#! /usr/bin/env php
+
+<?php
+
+use Aero\FlowerStoreCommand;
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+$app = new Application('Bloom Demo', '1.0');
+
+$app->add(new FlowerStoreCommand);
+
+$app->run();
