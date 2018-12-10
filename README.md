@@ -90,3 +90,4 @@ Are you done? Great!! Please let challenge@bloomon.nl know that you are ready,
 * run ```docker-compose exec cli bash```
 * Run Application: ./bloom [command] i.e : ```./bloom total```
 * PHPUnit CLI: ```./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/FlowerStoreCommandTest```
+* Exit app: ```exit``` and ```docker-compose down```
