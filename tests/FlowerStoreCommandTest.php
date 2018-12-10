@@ -15,4 +15,9 @@ class FlowerStoreCommandTest extends TestCase {
         );
     }
 
+    public function testSmapleDirectoryExsists(): void
+    {
+        $this->assertDirectoryExists('./sample/');
+    }
+
 }
