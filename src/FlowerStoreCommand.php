@@ -66,6 +66,9 @@ Class FlowerStoreCommand extends Command {
             $this->cycle++;
         }
 
+        // Check storage excluding flowers used for bouquets
+        $this->ifStorageFull($output);
+
         $output = $this->getOutput();
 
         return $output;
@@ -161,5 +164,14 @@ Class FlowerStoreCommand extends Command {
         }
 
         return $foundFlower;
+    }
+
+    public function ifStorageFull($output)
+    {
+        // Storage cannot exceeded 256 flowers
+        if(array_sum($this->flowerGroup) > 256){
+            $output->writeln("<error>Storege is full</error>\n");
+            exit(1);
+        }
     }
 }
